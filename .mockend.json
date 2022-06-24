@@ -68,12 +68,10 @@
       ]
     },
     "birthdate": {
-      "string": {
         "dateTime": {
           "min": "1940-03-24T00:00:00Z",
           "max": "2005-06-24T23:59:59Z"
         }
-      }
     },
     "monk_base_number": {
       "regexp": "[0-9]{3,9}"
@@ -92,7 +90,7 @@
     },
     "title": { "regexp": "[А-Я][a-z]{5,10}" },
     "rank": {
-      "string": { "regexp": "[А-Я][а-я]{5,10} [а-я][а-я]{5,10}" }
+       "regexp": "[А-Я][а-я]{5,10} [а-я][а-я]{5,10}"
     },
     "notes": {
       "loremWords": { "minLength": 0, "maxLength": 50 }
@@ -108,7 +106,6 @@
         "min": "2022-03-24T00:00:00Z",
         "max": "2022-06-24T23:59:59Z"
       }
-    },
-    "is_deleted": { "boolean": [true] }
+    }
   }
 }
